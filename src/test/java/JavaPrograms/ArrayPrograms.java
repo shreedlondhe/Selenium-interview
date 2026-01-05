@@ -8,6 +8,27 @@ import java.util.Set;
 
 public class ArrayPrograms {
     @Test
+    void findCommonElement_WithoutDuplicate() {
+     int a[]={1,2,3,4,5,6,7,8,7,6,6,7,10};
+     int b[]={3,2,5,4,6,7,9,6,4,3,4};
+     Set <Integer> ss=new HashSet<>();
+
+     for(int i=0;i<a.length;i++){
+         for(int k=0;k<b.length;k++){
+
+             if(a[i]==b[k]){
+                 if(ss.contains(a[i])){
+
+                 }else{
+                     ss.add(a[i]);
+                     System.out.println(a[i]+" is duplicate");
+                 }
+
+             }
+         }
+     }
+    }
+    @Test
     void bubbleSort(){
         int arr[]={1,3,4,5,7,9,1,2,9,10};
         for(int i=0;i<arr.length;i++){
