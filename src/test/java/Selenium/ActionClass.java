@@ -34,6 +34,8 @@ public class ActionClass {
    WebElement ele=driver.findElement(By.xpath("//*[@id=\"tabButton\"]"));
 
     Actions action=new Actions(driver);
+    // actions.clickAndHold(ele).perform();
+    // actions.release().perform();
 
     action.click(ele).perform();
     action.moveToElement(ele).perform();
@@ -41,5 +43,9 @@ public class ActionClass {
     action.dragAndDrop(ele,ele).build().perform();
     action.contextClick(ele).perform();
     action.sendKeys(ele, Keys.ENTER);
+    actions.sendKeys(ele, "Text").perform();
+        
+    //actions.keyDown(Keys.CONTROL).sendKeys("a").keyUp(Keys.CONTROL).perform();
+    //actions.keyUp(Keys.CONTROL).perform();
 }
 }
