@@ -15,6 +15,16 @@ public class ActionClass {
 
 @Test
     public void actionClass() throws InterruptedException {
+// ChromeOptions options = new ChromeOptions();
+// options.addArguments(
+//     "--start-maximized",
+//     "--disable-notifications",
+//     "--incognito",
+//     "--headless=new",
+//     "--disable-gpu",
+//     "--no-sandbox"
+// );
+        
     ChromeOptions option=new ChromeOptions();
     option.setBrowserVersion("126");
     WebDriver driver=new ChromeDriver(option);
