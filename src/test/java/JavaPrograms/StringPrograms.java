@@ -62,6 +62,18 @@ public class StringPrograms {
         String s="shrinivas londhe";
         System.out.println(s.split(" ").length);
     }
+    
+ @Test
+    void checkPalindrome() {
+        String s="Nitinn";
+   String rev="";
+   for(char x:s.toCharArray()){
+       rev=x+rev;
+   }
+        System.out.println(rev.toLowerCase().equals(s.toLowerCase())?"Palindrome":"Not palindrome");
+
+    }
+    
     @Test
     void palindrome(){
         String s="shrinivas";
