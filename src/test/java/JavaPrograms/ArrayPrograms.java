@@ -8,6 +8,21 @@ import java.util.Set;
 
 public class ArrayPrograms {
 @Test
+  void findFrequencyOfEachElement(){
+   int ar1[]={1,2,3,9,1,2,5,4,2,9,6,8,6,7,2,3,4,1};
+   HashMap<Integer,Integer> map=new HashMap<>();
+   for(int x:ar1){
+     if(map.containsKey(x)){
+       map.put(x,map.get(x)+1);
+     }
+     else{
+       map.put(x,1);
+     }
+   }
+  System.out.println(map);
+  }
+  
+@Test
   void mergeTwoArray(){
    int ar1[]={1,2,3,9};
    int ar2[]={4,5,6,8,10};
