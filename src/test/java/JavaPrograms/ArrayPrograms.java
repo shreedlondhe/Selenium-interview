@@ -8,6 +8,19 @@ import java.util.Set;
 
 public class ArrayPrograms {
 @Test
+void reverseArraySecondMethod(){
+      int ar[]={1,2,3,4,5,6};
+      int ar2[]=new int[ar.length];
+      int ar2Length=ar2.length-1;
+      for(int i=0;i<ar.length;i++){
+      ar2[ar2Length]=ar[i];
+      ar2Length--;
+   }
+   for(int x:ar2){
+     System.out.println(x);
+   }
+}
+@Test
   void findFrequencyOfEachElement(){
    int ar1[]={1,2,3,9,1,2,5,4,2,9,6,8,6,7,2,3,4,1};
    HashMap<Integer,Integer> map=new HashMap<>();
