@@ -7,7 +7,27 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class ArrayPrograms {
-      @Test
+@Test
+  void mergeTwoArray(){
+   int ar1[]={1,2,3,9};
+   int ar2[]={4,5,6,8,10};
+
+   int merge[]=new int[ar1.length+ar2.length];
+   for(int i=0;i<ar1.length;i++)
+   {
+     merge[i]=ar1[i];
+   }
+   int k=ar1.length;
+  for(int i=0;i<ar2.length;i++){
+    merge[k]=ar2[i];
+    k++;
+  }
+for(int x:merge){
+  System.out.println(x);
+}
+  }
+      
+@Test
   void ReverseArray(){
   int arr[]={1,2,3,4,5,6,7,8,9};
   int start=0;
