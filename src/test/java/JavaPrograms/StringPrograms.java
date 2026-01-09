@@ -5,6 +5,21 @@ import org.testng.annotations.Test;
 import java.util.*;
 
 public class StringPrograms {
+
+    @Test
+  void SortString(){
+
+  String str="zacertfsgxkibg";
+  String sorted="";
+char arr[]=str.toCharArray();
+  Arrays.sort(arr);
+
+for(char x:arr){
+  sorted+=x;
+}
+  System.out.println(sorted);
+
+  }
     @Test
     void reverseString(){
         String s="Hellow World";
