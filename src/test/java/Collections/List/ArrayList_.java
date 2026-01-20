@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 import java.util.*;
 
 public class ArrayList_ {
+    //Array list  - maintain insertion order, store hetregeneious element, dynamic in size
 
 //    Best choice –
 //            “ArrayList is best used when we need fast access by index and frequent
