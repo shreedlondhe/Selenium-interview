@@ -43,7 +43,7 @@ public class ActionClass {
     action.dragAndDrop(ele,ele).build().perform();
     action.contextClick(ele).perform();
     action.sendKeys(ele, Keys.ENTER);
-    actions.sendKeys(ele, "Text").perform();
+    action.sendKeys(ele, "Text").perform();
         
     //actions.keyDown(Keys.CONTROL).sendKeys("a").keyUp(Keys.CONTROL).perform();
     //actions.keyUp(Keys.CONTROL).perform();

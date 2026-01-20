@@ -1,11 +1,18 @@
 package Selenium;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.time.Duration;
+import java.util.List;
 
 public class BrokenLink {
 
@@ -32,7 +39,7 @@ public class BrokenLink {
         driver.manage().window().maximize();
         driver.get("https://testautomationpractice.blogspot.com/");
 
-        List <WebElement> list=driver.findElements(By.xpath("//a"));
+        List<WebElement> list=driver.findElements(By.xpath("//a"));
 
         for(WebElement x:list){
             String foundUrl=x.getAttribute("href");

@@ -3,6 +3,7 @@ package JavaPrograms;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -74,32 +75,29 @@ for(int x:arr){
   }
       @Test
     void binarySearch() throws InterruptedException {
-       int left,mid,right,search;
-       search=6;
-        int a[]={1,2,3,4,5,6};
-        left=0;
-        right=a.length-1;
-        boolean flag=false;
-        while(left<=right){
-            mid=left+(right-left)/2;
-            if(a[mid]==search){
-               flag=true;
-                break;
-            }
-            else if(a[mid]>search){
-                right=mid-1;
-            }
-            else {
-                left=mid+1;
-            }
-        }
-if(flag){
-    System.out.println("Element found");
-}
-else{
-    System.out.println("Element not found");
-}
-
+          int left, mid, right, search;
+          search = 6;
+          int a[] = {1, 2, 3, 4, 5, 6};
+          left = 0;
+          right = a.length - 1;
+          boolean flag = false;
+          while (left <= right) {
+              mid = left + (right - left) / 2;
+              if (a[mid] == search) {
+                  flag = true;
+                  break;
+              } else if (a[mid] > search) {
+                  right = mid - 1;
+              } else {
+                  left = mid + 1;
+              }
+          }
+          if (flag) {
+              System.out.println("Element found");
+          } else {
+              System.out.println("Element not found");
+          }
+      }
     
     @Test
     void findCommonElement_WithoutDuplicate() {
