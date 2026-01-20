@@ -5,6 +5,19 @@ import org.testng.annotations.Test;
 import java.util.*;
 
 public class ArrayList_ {
+
+//    Best choice –
+//            “ArrayList is best used when we need fast access by index and frequent
+//    reading operations, and when insertions are mostly at the end,
+//    because it provides access with the index.”
+//
+//    Worst choice –
+//            “ArrayList should not be used when we have frequent insertions
+//    or deletions in the middle or beginning of the list,
+//    or when thread safety is required,
+//    because shifting elements is costly(it shift element for every addition) and it is not thread-safe by default.”
+
+
    @Test
     public static void ArrayList_methods() {
 
