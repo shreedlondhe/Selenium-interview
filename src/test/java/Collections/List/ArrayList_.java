@@ -6,6 +6,8 @@ import java.util.*;
 
 public class ArrayList_ {
     //Array list  - maintain insertion order, store hetregeneious element, dynamic in size
+    //             allow duplicate to save, allow multiple null value
+    //             implement random acccess interface
 
 //    Best choice –
 //            “ArrayList is best used when we need fast access by index and frequent
@@ -23,7 +25,9 @@ public class ArrayList_ {
     public static void ArrayList_methods() {
 
         ArrayList<Integer> ar=new ArrayList<>();
-        ar.add(11);               // add method to add data
+        ar.add(11);
+       ar.add(null);
+       ar.add(null);    // add method to add data
         ar.add(12);
         ar.add(13);
         ar.add(14);
