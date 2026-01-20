@@ -36,10 +36,57 @@ public class ArrayList_ {
         System.out.println(newlist);
         int index= ar.indexOf(15); // return index of object
         System.out.println(index);
+       System.out.println(ar);
+       Collections.sort(ar, Collections.reverseOrder());
+
+       Collections.reverse(ar); // to reverse
+       System.out.println(ar);
+
+       int max = Collections.max(ar);
+       int min = Collections.min(ar);
+
+       System.out.println("Max = " + max);
+       System.out.println("Min = " + min);
+
+       boolean equal = ar.equals(ar); // .equals compare two arralists
+       System.out.println(equal);
 
 
 
+
+
+
+
+   }
+@Test
+   void RemoveEvenNumbersfromArrayList(){
+       ArrayList list=new ArrayList<>();
+       list.add(1);
+       list.add(12);
+    Iterator<Integer> it = list.iterator();
+
+    while(it.hasNext()) {
+        if(it.next() % 2 == 0) {
+            it.remove();
+        }
     }
+
+    System.out.println(list);
+
+   }
+@Test
+   void FindFrequencyofEachElement(){
+    ArrayList<Integer> list = new ArrayList<>(Arrays.asList(10,20,10,30,20));
+
+    HashMap<Integer, Integer> map = new HashMap<>();
+
+    for(Integer val : list) {
+        map.put(val, map.getOrDefault(val, 0) + 1);
+    }
+
+    System.out.println(map);
+
+}
 
 @Test
     void removeDuplicateFromArrayList(){
@@ -68,8 +115,18 @@ public class ArrayList_ {
 
         String[] newArray = list.toArray(new String[0]);
     }
+@Test
+void CopyArrayListToOther(){
 
+  ArrayList l1=new ArrayList<>();
+  l1.add(12);
+  l1.add(24);
+  l1.add(36);
+  ArrayList l2=new ArrayList<>();
+  l2.addAll(l1);     // method addAll() used to add all data from list one to other list
+    System.out.println(l2);
 
+}
 
 
 }
