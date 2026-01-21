@@ -2,6 +2,7 @@ package Collections.Set;
 
 import org.testng.annotations.Test;
 
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.TreeSet;
 
@@ -101,5 +102,61 @@ void createHashSet(){
 
 
 }
+@Test
+    void removeDuplicate() {
+        int[] arr = {1, 2, 3, 2, 4, 1, 5};
 
+        HashSet<Integer> set = new HashSet<>();
+        for (int n : arr) {
+            set.add(n);
+        }
+
+        System.out.println("Unique elements: " + set);
+    }
+@Test
+    void FindDuplicates (){
+        int[] arr = {1, 2, 3, 2, 4, 1, 5};
+
+        HashSet<Integer> set = new HashSet<>();
+        HashSet<Integer> duplicates = new HashSet<>();
+
+        for (int n : arr) {
+            if (!set.add(n)) {
+                duplicates.add(n);
+            }
+        }
+
+        System.out.println("Duplicate elements: " + duplicates);
+    }
+
+    @Test
+    void UnionSet(){
+        HashSet<Integer> set1 = new HashSet<>(Arrays.asList(1,2,3));
+        HashSet<Integer> set2 = new HashSet<>(Arrays.asList(3,4,5));
+
+        HashSet<Integer> union = new HashSet<>(set1);
+        union.addAll(set2);
+    }
+    @Test
+    void findCommon(){
+        HashSet<Integer> set1 = new HashSet<>(Arrays.asList(1,2,3));
+        HashSet<Integer> set2 = new HashSet<>(Arrays.asList(3,4,5));
+
+        HashSet<Integer> intersection = new HashSet<>(set1);
+        intersection.retainAll(set2);
+
+        System.out.println("Intersection: " + intersection);
+    }
+    @Test
+    void FirstRepeatedChar(){
+        String str = "programming";
+        HashSet<Character> set = new HashSet<>();
+
+        for (char ch : str.toCharArray()) {
+            if (!set.add(ch)) {
+                System.out.println("First repeated character: " + ch);
+                break;
+            }
+        }
+    }
 }
