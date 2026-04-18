@@ -8,6 +8,7 @@ public class LinkedList_ {
 
 //    Best choice –
 //            “LinkedList is best used when we have frequent insertions and deletions
+    // uses doubly limled list inernally
 //    at the beginning or middle of the list, because it does not require shifting elements
 //    and insertion/deletion is efficient.” (it just add or delete node adn only affect that node)
 //
