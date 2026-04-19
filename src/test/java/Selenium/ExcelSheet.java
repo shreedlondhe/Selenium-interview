@@ -12,7 +12,7 @@ import java.io.IOException;
 
 public class ExcelSheet {
 
-    void handleSheet() throws IOException {
+    void handleSheet_method_1() throws IOException {
         FileInputStream file = new FileInputStream("/Users/shrinivaslondhe/Desktop/fileeee.xlsx");
         Workbook workbook = new XSSFWorkbook(file);
         Sheet sheet=workbook.getSheetAt(0);
@@ -20,7 +20,16 @@ public class ExcelSheet {
         Cell cell=row.getCell(5);
         String value=cell.getStringCellValue();
         System.out.println(value);
+    }
+    void handleSheet_Method_2(){
+        FileInputStream file = new FileInputStream("testdata.xlsx");
+        Workbook workbook = WorkbookFactory.create(file);
+        Sheet sheet = workbook.getSheet("Sheet1");
+        Row row = sheet.getRow(0);
+        Cell cell = row.getCell(0);
+        System.out.println(cell.getStringCellValue());
 
-
+        workbook.close();
+    
     }
 }
