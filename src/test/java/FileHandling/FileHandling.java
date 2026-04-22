@@ -46,7 +46,16 @@ public class FileHandling {
         System.out.println(data.get("license"));
 
     }
+void downloadFileOnlineAndReadItsContent()throws Exception{
 
+        URL url = new URL("https://www.fileexamples.net/files/sample_readme.txt");
+        HttpURLConnection cn = (HttpURLConnection) url.openConnection();
+        cn.setRequestMethod("GET");
+        BufferedReader reader = new BufferedReader(new InputStreamReader(cn.getInputStream()));
+        String line;
+        while ((line = reader.readLine()) != null) {
+            System.out.println(line);
+        }
 
        // read file from link
 //
