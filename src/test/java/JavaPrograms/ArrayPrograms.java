@@ -8,6 +8,10 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class ArrayPrograms {
+      @Test
+      void secondHighestNumber(){
+            
+      }
 @Test
 void reverseArraySecondMethod(){
       int ar[]={1,2,3,4,5,6};
