@@ -21,6 +21,26 @@ for(char x:arr){
   System.out.println(sorted);
 
   }
+
+@Test
+    void sortStringWithoutInbuiltMethodd(){
+        String s="shrinivas";
+        char[] c=s.toCharArray();
+        for(int i=0;i<c.length-1;i++){
+            for(int j=0;j<c.length-1;j++){
+                int x=c[j];
+                int y=c[j+1];
+                if(x>y){
+                    char temp=c[j];
+                    c[j]=c[j+1];
+                    c[j+1]=temp;
+                }
+            }
+        }
+        System.out.println(c);
+
+    }
+    
     @Test
     void reverseString(){
         String s="Hellow World";
