@@ -9,6 +9,16 @@ import java.util.Set;
 
 public class ArrayPrograms {
       @Test
+      void CheckArrayisSortedOrNot{
+            
+      }
+
+       @Test
+      void RotateArrayLeftbyOne{
+            
+      }
+      
+      @Test
       void secondHighestNumber(){
             
       }
