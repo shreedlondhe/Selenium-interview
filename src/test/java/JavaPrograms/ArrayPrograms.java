@@ -15,7 +15,14 @@ public class ArrayPrograms {
 
        @Test
       void RotateArrayLeftbyOne{
-            
+           //  let ar=[1,2,3,4,5,6,7,8,9]
+           //   let f=ar[0]
+           // for(let i=0;i<ar.length-1;i++){
+           //     ar[i]=ar[i+1]
+           //    }
+           //  ar[ar.length-1]=f
+
+           //  console.log(ar)
       }
       
       @Test
