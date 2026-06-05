@@ -57,6 +57,22 @@ void reverseArraySecondMethod(){
    }
   System.out.println(map);
   }
+      or
+//       let arr:number[]=[1,100,2,3,4,5,6,7,8,1,2,3,4,5,6,7,8,1,2,3,]
+// let count=0;
+
+// for(let j of [...new Set<number>(arr)]){
+//   for(let i of arr){
+//     if(j===i){
+//       count++;
+//     }
+    
+//   }
+//   console.log(j+' : '+count)
+//   count=0;
+  
+// }
+ 
   
 @Test
   void mergeTwoArray(){
