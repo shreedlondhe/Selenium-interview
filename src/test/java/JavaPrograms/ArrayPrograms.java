@@ -27,7 +27,8 @@ public class ArrayPrograms {
       
       @Test
       void secondHighestNumber(){
-            
+            //let arr:number[]=[9,4,3,5,6,1,2,1,4,3]
+//         console.log([...new Set<number>(arr.sort((a,b)=>{return a-b}))][1])
       }
 @Test
 void reverseArraySecondMethod(){
