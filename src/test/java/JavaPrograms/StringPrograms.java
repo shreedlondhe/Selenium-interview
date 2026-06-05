@@ -7,6 +7,31 @@ import java.util.*;
 
 public class StringPrograms {
 
+// find first non reapeating char
+//     let str="automations is fun"
+// let count=0;
+// let countt=0;
+// for(let j of [...new Set(str.split(''))]){
+
+//     if(j!==' '){
+ 
+//     for(let i of str.split('')){
+//       if(j===i){
+//        count ++;
+//       }
+//     }
+//     if(count==1){
+//          countt++
+//          if(countt>1){
+//             console.log('second non reapiting char : '+j)
+//          }
+//     }
+  
+//     count=0;
+//     }
+// }
+
+    
     @Test
   void SortString(){
 
