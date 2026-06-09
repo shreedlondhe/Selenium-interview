@@ -6,6 +6,24 @@ import java.util.Set;
 import java.util.*;
 
 public class StringPrograms {
+// second last non repeating char
+//  import java.util.*;
+// public class Main {
+//     public static void main(String[] args) {
+//     String str="THIS IS SHRINIVAS";
+ 
+//     LinkedHashSet<String> set=new LinkedHashSet<>();
+//     ArrayList <String> list=new ArrayList<>();
+//     for(String s:str.split("")){
+//         if(!set.add(s)){
+//         }
+//     }
+// for(String s:set)
+// list.add(s);
+//   System.out.println(list.get(list.size()-2));
+//     }
+ 
+// }
 
 // find first non reapeating char
 //     let str="automations is fun"
