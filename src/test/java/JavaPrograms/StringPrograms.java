@@ -6,6 +6,37 @@ import java.util.Set;
 import java.util.*;
 
 public class StringPrograms {
+
+ //first longest substring
+ // public static void main(String[] args) throws IOException, InterruptedException, InvalidFormatException {
+ //        String s = "abcabcbb";
+ //        ArrayList<String> li=new ArrayList<>();
+ //        String str="";
+ //        for(String i:s.split("")){
+ //            if(str.contains(i)){
+ //                li.add(str);
+ //                str="";
+ //            }
+ //            else{
+ //                str+=i;
+ //            }
+
+ //        }
+ //        System.out.println(li);
+ //        String finall="";
+ //        int finallLengthCount=0;
+ //        for(String x:li){
+ //            if(x.length()>finallLengthCount){
+ //                finallLengthCount=x.length();
+ //                finall=x;
+ //            }
+ //        }
+ //        System.out.println("Longest substring is "+finall);
+ //    }
+
+
+
+ 
 // second last non repeating char
 //  import java.util.*;
 // public class Main {
