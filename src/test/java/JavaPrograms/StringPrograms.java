@@ -6,6 +6,27 @@ import java.util.Set;
 import java.util.*;
 
 public class StringPrograms {
+ // find last non repeating char
+ // @Test
+ //    public static void main(String[] args) throws IOException, InterruptedException, InvalidFormatException {
+ //        String str = "aabbccdef";
+ //        char[] arr=str.toCharArray();
+ //        int count=0;
+ //        ArrayList <Character>ch=new ArrayList<>();
+ //        for(int i=0;i<str.length();i++){
+ //            for(int j=0;j<str.length();j++){
+ //             if(arr[i]==arr[j]){
+ //                 count++;
+ //             }
+ //            }
+ //            if(count==1){
+ //                ch.add(arr[i]);
+
+ //            }
+ //            count=0;
+ //        }
+ //        System.out.println(ch.get(ch.size()-1));
+ //    }
 
  //first longest substring
  // public static void main(String[] args) throws IOException, InterruptedException, InvalidFormatException {
