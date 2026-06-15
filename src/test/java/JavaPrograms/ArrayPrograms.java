@@ -8,7 +8,12 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class ArrayPrograms {
-/Flatten Array means converting a nested array (array inside array) into a single-level array.
+
+//let arr3:number[]=[0,1,1,3,4,6]    find missing number => 2,5
+
+
+      
+//Flatten Array means converting a nested array (array inside array) into a single-level array.
 // const arr = [1, 2, [3, 4], [5, 6]];
 // const flatArr = arr.flat();
 // console.log(flatArr);
