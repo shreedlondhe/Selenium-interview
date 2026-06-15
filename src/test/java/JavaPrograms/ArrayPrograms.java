@@ -8,6 +8,14 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class ArrayPrograms {
+/Flatten Array means converting a nested array (array inside array) into a single-level array.
+// const arr = [1, 2, [3, 4], [5, 6]];
+// const flatArr = arr.flat();
+// console.log(flatArr);
+//      flat all subarray
+      // const arr = [1, [2, [3, [4]]]];
+      // console.log(arr.flat(Infinity));
+      
       @Test
       void CheckArrayisSortedOrNot{
             
