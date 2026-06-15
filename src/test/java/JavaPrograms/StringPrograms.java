@@ -7,6 +7,24 @@ import java.util.*;
 
 public class StringPrograms {
  // find last non repeating char
+// let str:string="this is shrinivas"
+// let list:string[]=[]
+// let count=0;
+// for(let i of [...new Set<string>(str.split(""))]){
+//     for(let j of str.split("")){
+//     if(i===j){
+//       count++;
+//     }
+//     }
+//     if(count===1){
+//     list.push(i)
+//     }
+//     count=0;
+// }
+// console.log(list[list.length-1])
+
+
+ 
  // @Test
  //    public static void main(String[] args) throws IOException, InterruptedException, InvalidFormatException {
  //        String str = "aabbccdef";
