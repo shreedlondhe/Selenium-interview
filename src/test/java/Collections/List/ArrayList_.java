@@ -5,10 +5,11 @@ import org.testng.annotations.Test;
 import java.util.*;
 
 public class ArrayList_ {
+  // adding comment
+    
     //Array list  - maintain insertion order, store hetregeneious element, dynamic in size
     //             allow duplicate to save, allow multiple null value
     //             implement random acccess interface
-    // used dunamic array inrenally
 
 //    Best choice –
 //            “ArrayList is best used when we need fast access by index and frequent
