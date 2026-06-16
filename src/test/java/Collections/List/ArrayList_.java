@@ -5,6 +5,8 @@ import org.testng.annotations.Test;
 import java.util.*;
 
 public class ArrayList_ {
+  // adding comment
+    
     //Array list  - maintain insertion order, store hetregeneious element, dynamic in size
     //             allow duplicate to save, allow multiple null value
     //             implement random acccess interface
