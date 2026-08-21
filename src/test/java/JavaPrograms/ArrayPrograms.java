@@ -116,6 +116,23 @@ for(int x:merge){
   System.out.println(x);
 }
   }
+      //1st method
+      // let ar1=[1,2,3]
+      // let ar2=[4,5,6]
+      // console.log([...ar1,...ar2])
+      
+       //2nd method
+     //  let ar1=[1,2,3]
+     // let ar2=[4,5,6]
+     // for(let i of ar2){
+     //  ar1.push(i)
+     //   }
+     // console.log(ar1)
+             //3rd method
+          //  let ar1=[1,2,3]
+          // let ar2=[4,5,6]
+          // console.log(ar1.concat(ar2))
+
       
 @Test
   void ReverseArray(){
