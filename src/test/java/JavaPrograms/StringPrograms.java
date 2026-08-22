@@ -235,8 +235,10 @@ for(char x:arr){
        }
         System.out.println(rev);
     }
+
     @Test
     void findDuplicate(){
+        // method1
         String s="shrinivas londhe";
         Set<Character> duplicate=new HashSet<>();
         Set<Character> set=new HashSet<>();
@@ -251,8 +253,32 @@ for(char x:arr){
             System.out.println("Duplicate char is "+x);
         }
     }
+// method 2
+let str="shrinivas"
+let set=new Set();
+for(let i of str.split("")){
+if(!set.has(i)){
+  set.add(i)
+}
+else{
+    console.log(i+" is duplicate")
+}
+}
+// method 3
+let str="shrinivas"
+let obj={}
+for(let i of str.split("")){
+obj[i]=(obj[i]||0)+1
+}
+for(let i in obj){
+if(obj[i]>1){
+    console.log(i+" is duplicate ")
+}
+}
+
     @Test
     void OccurrencesofEachChar(){
+        // method 1
         String s="shrinivas londhe";
         HashMap<Character,Integer> map=new HashMap<>();
         for(int i=0;i<s.length();i++) {
@@ -266,6 +292,17 @@ for(char x:arr){
         }
         System.out.println(map);
     }
+//method 2
+let str="shrinivas"
+let obj={}
+for(let i of str.split("")){
+obj[i]=(obj[i]||0)+1
+}
+for(let i in obj){
+console.log(i+"  : "+obj[i])
+}
+
+
     @Test
     void countWorldsInString(){
         String s="shrinivas londhe";
