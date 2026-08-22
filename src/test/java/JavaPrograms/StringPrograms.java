@@ -336,6 +336,11 @@ console.log(i+"  : "+obj[i])
             System.out.println("string is not palidrome");
         }
     }
+// Method in js
+let str="nitin"
+let s="nitin"
+console.log(str.split("").reverse().join("")===s?"palindrome":"not palindrome")
+
     @Test
     void anagramString(){
         String s="shrinivas";
@@ -351,6 +356,11 @@ console.log(i+"  : "+obj[i])
             System.out.println("String is not anagram");
         }
     }
+//method in js
+let str="nitin"
+let s="nniit"
+console.log(str.split("").sort().join("")===s.split("").sort().join("")?"Anagram":"Not Anagram")
+
     @Test
     void vowels(){
         String s="shrinivas";
