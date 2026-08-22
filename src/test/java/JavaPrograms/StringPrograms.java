@@ -6,7 +6,7 @@ import java.util.Set;
 import java.util.*;
 
 public class StringPrograms {
- // find last non repeating char
+// 1st method  find last non repeating char
 // let str:string="this is shrinivas"
 // let list:string[]=[]
 // let count=0;
@@ -22,6 +22,42 @@ public class StringPrograms {
 //     count=0;
 // }
 // console.log(list[list.length-1])
+// 2nd method
+//  let str:string="this is shrinivas"
+// let obj={}
+// let unique=[]
+// for(let i of str.split("")){
+// obj[i]=(obj[i]||0)+1
+
+// }
+// console.log(obj)
+// for(let i in obj){
+// if(obj[i]==1){
+//    unique.push(i)
+// }
+// }
+// console.log(unique.reverse()[0])
+// 3rd method
+// let str:string="this is shrinivas"
+// let unique=[]
+// let map=new Map()
+// for(let i of str.split("")){
+// if(map.has(i)){
+//  map.set(i,map.get(i)+1)
+// }
+// else{
+//     map.set(i,1)
+// }
+// }
+// // <map>.keys()- returns key object  use [...map.keys()] to convert into array
+// // <map>.values() terurns values object [...map.values()] to convert into array
+
+// for(let i of [...map.keys()]){
+// if(map.get(i)==1){
+// unique.push(i)
+// }
+// }
+// console.log(unique.reverse()[0])
 
 
  
