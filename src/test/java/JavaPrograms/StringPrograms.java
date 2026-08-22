@@ -7,112 +7,110 @@ import java.util.*;
 
 public class StringPrograms {
 // 1st method  find last non repeating char
-// let str:string="this is shrinivas"
-// let list:string[]=[]
-// let count=0;
-// for(let i of [...new Set<string>(str.split(""))]){
-//     for(let j of str.split("")){
-//     if(i===j){
-//       count++;
-//     }
-//     }
-//     if(count===1){
-//     list.push(i)
-//     }
-//     count=0;
-// }
-// console.log(list[list.length-1])
+let str:string="this is shrinivas"
+let list:string[]=[]
+let count=0;
+for(let i of [...new Set<string>(str.split(""))]){
+    for(let j of str.split("")){
+    if(i===j){
+      count++;
+    }
+    }
+    if(count===1){
+    list.push(i)
+    }
+    count=0;
+}
+console.log(list[list.length-1])
 // 2nd method using object
-//  let str:string="this is shrinivas"
-// let obj={}
-// let unique=[]
- // adding element in object on basis of key value pair
-// for(let i of str.split("")){
-// obj[i]=(obj[i]||0)+1
+ let str:string="this is shrinivas"
+let obj={}
+let unique=[]
+ adding element in object on basis of key value pair
+for(let i of str.split("")){
+obj[i]=(obj[i]||0)+1
 
-// }
-// console.log(obj)
- // adding unique elements to array
-// for(let i in obj){
-// if(obj[i]==1){
-//    unique.push(i)
-// }
-// }
- // orinting element from array using reverse casue when we use reverse can get daat on index basis 0,1 and when we not use reverse then we need to do
+}
+console.log(obj)
+ adding unique elements to array
+for(let i in obj){
+if(obj[i]==1){
+   unique.push(i)
+}
+}
+ // extracting  element from array using reverse casue when we use reverse can get daat on index basis 0,1 and when we not use reverse then we need to do
  // large operation like .length-1,.length-2 so we are using reverse
-// console.log(unique.reverse()[0])
+console.log(unique.reverse()[0])
 // 3rd method using map
-// let str:string="this is shrinivas"
-// let unique=[]
-// let map=new Map()
-// for(let i of str.split("")){
-// if(map.has(i)){
-//  map.set(i,map.get(i)+1)
-// }
-// else{
-//     map.set(i,1)
-// }
-// }
+let str:string="this is shrinivas"
+let unique=[]
+let map=new Map()
+for(let i of str.split("")){
+if(map.has(i)){
+ map.set(i,map.get(i)+1)
+}
+else{
+    map.set(i,1)
+}
+}
 // // <map>.keys()- returns key object  use [...map.keys()] to convert into array
 // // <map>.values() terurns values object [...map.values()] to convert into array
+for(let i of [...map.keys()]){
+if(map.get(i)==1){
+unique.push(i)
+}
+}
+console.log(unique.reverse()[0])
 
-// for(let i of [...map.keys()]){
-// if(map.get(i)==1){
-// unique.push(i)
-// }
-// }
-// console.log(unique.reverse()[0])
 
+ // longest substring in java
+ @Test
+    public static void main(String[] args) throws IOException, InterruptedException, InvalidFormatException {
+        String str = "aabbccdef";
+        char[] arr=str.toCharArray();
+        int count=0;
+        ArrayList <Character>ch=new ArrayList<>();
+        for(int i=0;i<str.length();i++){
+            for(int j=0;j<str.length();j++){
+             if(arr[i]==arr[j]){
+                 count++;
+             }
+            }
+            if(count==1){
+                ch.add(arr[i]);
 
- 
- // @Test
- //    public static void main(String[] args) throws IOException, InterruptedException, InvalidFormatException {
- //        String str = "aabbccdef";
- //        char[] arr=str.toCharArray();
- //        int count=0;
- //        ArrayList <Character>ch=new ArrayList<>();
- //        for(int i=0;i<str.length();i++){
- //            for(int j=0;j<str.length();j++){
- //             if(arr[i]==arr[j]){
- //                 count++;
- //             }
- //            }
- //            if(count==1){
- //                ch.add(arr[i]);
+            }
+            count=0;
+        }
+        System.out.println(ch.get(ch.size()-1));
+    }
 
- //            }
- //            count=0;
- //        }
- //        System.out.println(ch.get(ch.size()-1));
- //    }
-
- //first longest substring
- // public static void main(String[] args) throws IOException, InterruptedException, InvalidFormatException {
- //        String s = "abcabcbb";
- //        ArrayList<String> li=new ArrayList<>();
- //        String str="";
- //        for(String i:s.split("")){
- //            if(str.contains(i)){
- //                li.add(str);
- //                str="";
- //            }
- //            else{
- //                str+=i;
- //            }
-
- //        }
- //        System.out.println(li);
- //        String finall="";
- //        int finallLengthCount=0;
- //        for(String x:li){
- //            if(x.length()>finallLengthCount){
- //                finallLengthCount=x.length();
- //                finall=x;
- //            }
- //        }
- //        System.out.println("Longest substring is "+finall);
- //    }
-//  same in js
+ //first longest substring in java
+ public static void main(String[] args) throws IOException, InterruptedException, InvalidFormatException {
+        String s = "abcabcbb";
+        ArrayList<String> li=new ArrayList<>();
+        String str="";
+        for(String i:s.split("")){
+            if(str.contains(i)){
+                li.add(str);
+                str="";
+            }
+            else{
+                str+=i;
+            }
+        }
+        System.out.println(li);
+        String finall="";
+        int finallLengthCount=0;
+        for(String x:li){
+            if(x.length()>finallLengthCount){
+                finallLengthCount=x.length();
+                finall=x;
+            }
+        }
+        System.out.println("Longest substring is "+finall);
+    }
+//  Longest substring in js 
  let str="abcabcbb";
 let s=""
 let array=[]
@@ -137,25 +135,25 @@ console.log(array[0])
 
 
 
+  
+// second last non repeating char in java
+ import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+    String str="THIS IS SHRINIVAS";
  
-// second last non repeating char
-//  import java.util.*;
-// public class Main {
-//     public static void main(String[] args) {
-//     String str="THIS IS SHRINIVAS";
+    LinkedHashSet<String> set=new LinkedHashSet<>();
+    ArrayList <String> list=new ArrayList<>();
+    for(String s:str.split("")){
+        if(!set.add(s)){
+        }
+    }
+for(String s:set)
+list.add(s);
+  System.out.println(list.get(list.size()-2));
+    }
  
-//     LinkedHashSet<String> set=new LinkedHashSet<>();
-//     ArrayList <String> list=new ArrayList<>();
-//     for(String s:str.split("")){
-//         if(!set.add(s)){
-//         }
-//     }
-// for(String s:set)
-// list.add(s);
-//   System.out.println(list.get(list.size()-2));
-//     }
- 
-// }
+}
 
 // find first non reapeating char
 //     let str="automations is fun"
