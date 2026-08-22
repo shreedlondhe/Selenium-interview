@@ -374,6 +374,14 @@ console.log(str.split("").sort().join("")===s.split("").sort().join("")?"Anagram
             }
         }
     }
+// method in js
+let arr="shriniavs"
+for(let i of arr.split("")){
+    if ("aeiou".includes(i)) {
+        console.log(i+" is vowels")
+    }
+}
+
     @Test
     void removeSpace(){
         String s="india is my country";
