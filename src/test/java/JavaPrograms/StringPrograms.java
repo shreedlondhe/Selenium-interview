@@ -22,22 +22,26 @@ public class StringPrograms {
 //     count=0;
 // }
 // console.log(list[list.length-1])
-// 2nd method
+// 2nd method using object
 //  let str:string="this is shrinivas"
 // let obj={}
 // let unique=[]
+ // adding element in object on basis of key value pair
 // for(let i of str.split("")){
 // obj[i]=(obj[i]||0)+1
 
 // }
 // console.log(obj)
+ // adding unique elements to array
 // for(let i in obj){
 // if(obj[i]==1){
 //    unique.push(i)
 // }
 // }
+ // orinting element from array using reverse casue when we use reverse can get daat on index basis 0,1 and when we not use reverse then we need to do
+ // large operation like .length-1,.length-2 so we are using reverse
 // console.log(unique.reverse()[0])
-// 3rd method
+// 3rd method using map
 // let str:string="this is shrinivas"
 // let unique=[]
 // let map=new Map()
@@ -108,6 +112,28 @@ public class StringPrograms {
  //        }
  //        System.out.println("Longest substring is "+finall);
  //    }
+//  same in js
+ let str="abcabcbb";
+let s=""
+let array=[]
+// adding string data in array on basis of non-repeating
+for(let i of str.split("")){
+if(s.includes(i)){
+   array.push(s)
+   s=""
+   s+=i
+}
+else{
+  s+=i
+}
+}
+// making array in descending order on basis of length
+for(let i =0;i<array.length-1;i++){
+if(array[i].length<array[i+1].length){
+array[i]=array[i=1]
+}
+}
+console.log(array[0])
 
 
 
