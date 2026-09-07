@@ -300,6 +300,29 @@ for(let i of arr){
 arr2.push(i)
 }
 console.log(arr2)
+
+
+// find count of elememnt from array
+    //  method 1
+      let arr:number[]=[0,1,1,4,6,6,4,2,4,6,7,8,9,3]
+let obj={}
+for(let i of arr){
+    obj[i]=(obj[i]||0)+1
+}
+console.log(obj)
+      //method 2
+      let arr:number[]=[0,1,1,4,6,6,4,2,4,6,7,8,9,3]
+let map=new Map<number,number>()
+for(let i of arr){
+    if(map.has(i)){
+     map.set(i,map.get(i)+1)
+    }
+    else{
+        map.set(i,1)
+    }
+}
+console.log(map)
+
       
     }
 
