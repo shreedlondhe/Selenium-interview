@@ -230,6 +230,19 @@ let arr:number[]=[0,1,1,4,6,6,4,2,4,6,7,8,9,3]
 let sortedArray:number[]=[... new Set(arr)].sort((a,b)=>a-b)
 console.log(sortedArray)
 
+// sort new method
+let arr:number[]=[10,12,11,0,1,1,4,6,6,4,2,4,6,7,8,9,3]
+let obj={}
+let sorted=[]
+for(let i of arr){
+    obj[i]=(obj[i]||0)+1
+}
+for(let i in obj){
+    sorted.push(i)
+}
+console.log(sorted)
+      
+
     @Test
     void findMaxNumber(){
         int arr[]={17,1,3,4,5,7,9,1,2,9,10,11,15,16};
