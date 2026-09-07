@@ -14,23 +14,23 @@ public class ArrayPrograms {
 
       
 //Flatten Array means converting a nested array (array inside array) into a single-level array.
-// const arr = [1, 2, [3, 4], [5, 6]];
-// const flatArr = arr.flat();
-// console.log(flatArr);
-//      flat all subarray
-      // const arr = [1, [2, [3, [4]]]];
-      // console.log(arr.flat(Infinity));
+const arr = [1, 2, [3, 4], [5, 6]];
+const flatArr = arr.flat();
+console.log(flatArr);
+  //   flat all subarray
+      const arr = [1, [2, [3, [4]]]];
+      console.log(arr.flat(Infinity));
 
 
 //CheckArrayisSortedOrNot
-//       let arr:number[]=[1,2,3,4,5,6]
-// let flag:boolean=true;
-// for(let i=0;i<arr.length-1;i++){
-//     if(arr[i]>arr[i+1]){
-// flag=false;
-//     }
-// }
-// console.log(flag?"sorted":"not sorted")
+      let arr:number[]=[1,2,3,4,5,6]
+let flag:boolean=true;
+for(let i=0;i<arr.length-1;i++){
+    if(arr[i]>arr[i+1]){
+flag=false;
+    }
+}
+console.log(flag?"sorted":"not sorted")
       @Test
       void CheckArrayisSortedOrNot{
             
@@ -38,14 +38,14 @@ public class ArrayPrograms {
 
        @Test
       void RotateArrayLeftbyOne{
-           //  let ar=[1,2,3,4,5,6,7,8,9]
-           //   let f=ar[0]
-           // for(let i=0;i<ar.length-1;i++){
-           //     ar[i]=ar[i+1]
-           //    }
-           //  ar[ar.length-1]=f
+            let ar=[1,2,3,4,5,6,7,8,9]
+             let f=ar[0]
+           for(let i=0;i<ar.length-1;i++){
+               ar[i]=ar[i+1]
+              }
+            ar[ar.length-1]=f
 
-           //  console.log(ar)
+            console.log(ar)
       }
       
       @Test
@@ -66,6 +66,17 @@ void reverseArraySecondMethod(){
      System.out.println(x);
    }
 }
+
+// reserse arrray second method      
+let arr:number[]=[2,3,4,5,6,7]
+for(let i=0,j=arr.length-1 ; i<arr.length && i<j ;i++,j--){ 
+let temp=arr[i]
+arr[i]=arr[j]
+arr[j]=temp
+}
+console.log(arr)
+
+      
 @Test
   void findFrequencyOfEachElement(){
    int ar1[]={1,2,3,9,1,2,5,4,2,9,6,8,6,7,2,3,4,1};
