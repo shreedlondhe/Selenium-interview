@@ -354,7 +354,31 @@ for(let i in obj){
     }
 }
       
+// last non  reaping char
+      let arr:number[]=[0,1,1,4,6,6,4,2,4,6,7,8,9,3]
+let obj={}
+for(let i of arr){
+    obj[i]=(obj[i]||0)+1
+}
+for(let i=arr.length-1;i>=0;i--){
+if(obj[arr[i]]==1){
+console.log(arr[i])
+break;
+}
+}
 
+// first non reaping char
+let arr:number[]=[0,1,1,4,6,6,4,2,4,6,7,8,9,3]
+let obj={}
+for(let i of arr){
+    obj[i]=(obj[i]||0)+1
+}
+for(let i=0;arr.length-1;i++){
+if(obj[arr[i]]==1){
+console.log(arr[i])
+break;
+}
+}
       
     }
 
