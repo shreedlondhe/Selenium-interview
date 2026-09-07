@@ -417,6 +417,22 @@ if(obj[arr[i]]==1){
 flag=true
 }
 }
+// second last non repeating char
+      let arr:number[]=[0,1,1,4,6,6,4,2,4,6,7,8,9,3]
+let obj={}
+for(let i of arr){
+    obj[i]=(obj[i]||0)+1
+}
+let flag=false
+for(let i=arr.length-1;i>0;i--){
+if(obj[arr[i]]==1){
+    if(flag){
+        console.log('second last non reapeating char ',arr[i])
+        break;
+    }
+flag=true
+}
+}
 
 
     }
