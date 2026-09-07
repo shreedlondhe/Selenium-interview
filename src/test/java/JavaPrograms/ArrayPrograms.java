@@ -225,6 +225,11 @@ for(int x:arr){
             System.out.print(x+" ");
         }
     }
+// sort using inbuild method
+let arr:number[]=[0,1,1,4,6,6,4,2,4,6,7,8,9,3]
+let sortedArray:number[]=[... new Set(arr)].sort((a,b)=>a-b)
+console.log(sortedArray)
+
     @Test
     void findMaxNumber(){
         int arr[]={17,1,3,4,5,7,9,1,2,9,10,11,15,16};
