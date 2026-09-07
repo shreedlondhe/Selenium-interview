@@ -235,6 +235,11 @@ for(int x:arr){
         }
         System.out.println(arr[0]);
     }
+// Find secons max number
+let arr:number[]=[2,3,4,5,6,7,7]
+console.log([... new Set(arr)].sort((a,b)=>b-a)[1])
+
+      
     @Test
     void findMinNumber(){
         int arr[]={17,1,3,4,5,7,9,1,2,9,10,11,15,16};
