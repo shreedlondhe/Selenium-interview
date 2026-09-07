@@ -287,6 +287,20 @@ console.log([... new Set(arr)].sort((a,b)=>b-a)[1])
 // incomplete
 
         }
+//copy one array to other
+//method 1
+let arr:number[]=[0,1,1,4,6,6,4,2,4,6,7,8,9,3]
+let arr2:number[]=[... arr]
+console.log(arr2)
+      
+// method 2
+      let arr:number[]=[0,1,2,3,4,5,6]
+let arr2:number[]=[]
+for(let i of arr){
+arr2.push(i)
+}
+console.log(arr2)
+      
     }
 
 
