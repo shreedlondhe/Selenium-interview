@@ -323,6 +323,38 @@ for(let i of arr){
 }
 console.log(map)
 
+
+// find un ique elemet from array
+      
+let arr:number[]=[0,1,1,4,6,6,4,2,4,6,7,8,9,3]
+let obj={}
+for(let i of arr){
+    obj[i]=(obj[i]||0)+1
+}
+console.log(obj)
+
+for(let i in obj){
+    if(obj[i]==1){
+  console.log(i)
+    }
+}
+
+
+// find un ique elemet from array
+      let arr:number[]=[0,1,1,4,6,6,4,2,4,6,7,8,9,3]
+let obj={}
+for(let i of arr){
+    obj[i]=(obj[i]||0)+1
+}
+console.log(obj)
+
+for(let i in obj){
+    if(obj[i]>1){
+  console.log(i)
+    }
+}
+      
+
       
     }
 
