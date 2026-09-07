@@ -379,7 +379,46 @@ console.log(arr[i])
 break;
 }
 }
-      
+
+// second non repeating char approach 1
+let arr:number[]=[0,1,1,4,6,6,4,2,4,6,7,8,9,3]
+let obj={}
+for(let i of arr){
+    obj[i]=(obj[i]||0)+1
+}
+let count=0
+console.log(obj)
+
+for(let i=0;i<arr.length;i++){
+if(obj[arr[i]]==1){
+    count++
+    if(count===2){
+        console.log('second non reapeating char ',arr[i])
+        break;
+    }
+}
+}
+
+// second non repeating char approach 2
+let arr:number[]=[0,1,1,4,6,6,4,2,4,6,7,8,9,3]
+let obj={}
+for(let i of arr){
+    obj[i]=(obj[i]||0)+1
+}
+let flag=false
+console.log(obj)
+
+for(let i=0;i<arr.length;i++){
+if(obj[arr[i]]==1){
+    if(flag){
+        console.log('second non reapeating char ',arr[i])
+        break;
+    }
+flag=true
+}
+}
+
+
     }
 
 
