@@ -537,4 +537,18 @@ console.log("Alphabets:", alphabets);
 console.log("Digits:", digits);
 console.log("Special Characters:", special);
 
+
+
+// Input:
+// Java is easy
+// Output:
+// easy is Java
+let str='Java is easy'
+let rev=""
+for(let i =str.split(" ").length-1;i>=0;i--){
+    rev+=str.split(" ")[i]
+    rev+=" "
+}
+console.log(rev)
+
 }
