@@ -223,6 +223,23 @@ for(char x:arr){
         }
         System.out.println(rev);
     }
+
+// reverse string using two pointer
+let str="hello"
+let arr=str.split('')
+let a=0
+let b=arr.length-1
+while(a<b){
+let temp=arr[a]
+arr[a]=arr[b]
+arr[b]=temp
+a++;
+b--
+}
+let str_revresed=arr.join('')
+console.log(str_revresed)
+
+    
     @Test
     void reverseEachWord(){
         String s="Hellow World";
