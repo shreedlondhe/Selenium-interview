@@ -389,6 +389,31 @@ let str="nitin"
 let s="nniit"
 console.log(str.split("").sort().join("")===s.split("").sort().join("")?"Anagram":"Not Anagram")
 
+// anagarm without sort
+let str1='listee'
+let str2='silett'
+function checkAnagarmWithoutSort(str1,str2){
+let arr1=str1.split('')
+let arr2=str2.split('')
+// check 1
+if(arr1.length!=arr2.length){
+    return false
+}
+for(let i of arr1){
+ let index =arr2.indexOf(i)
+ if(arr2.includes(i)){
+    arr2.splice(index,1)
+ }
+}
+if(arr2.length!=0){
+return false
+}
+
+return true
+}
+console.log(checkAnagarmWithoutSort(str1,str2)?'anagarm':'not anaghram')
+
+
     @Test
     void vowels(){
         String s="shrinivas";
