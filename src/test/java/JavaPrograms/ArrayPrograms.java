@@ -392,7 +392,7 @@ for(let i in obj){
 }
 
 
-// find un ique elemet from array
+// find unique elemet from array
       let arr:number[]=[0,1,1,4,6,6,4,2,4,6,7,8,9,3]
 let obj={}
 for(let i of arr){
