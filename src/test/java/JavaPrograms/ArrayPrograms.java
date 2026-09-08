@@ -487,6 +487,26 @@ flag=true
 }
 
 
+// two sum problem
+let arr:number[]=[1,2,3,4,5,6,7,8,9,10,11,12,14,13,9,8,7,6,5,4,3,2,1,10]
+arr=arr.sort((a,b)=>(a-b))
+let a=0
+let b=arr.length-1;
+let sum=20
+
+for(let i=0;i<arr.length;i++){
+if(sum===arr[a]+arr[b]){
+    console.log(arr[a],arr[b])
+    break;
+}
+else if(sum<arr[a]+arr[b]){
+   b++
+}
+else if(sum>arr[a]+arr[b]){
+   a++
+}
+}
+
     }
 
 
