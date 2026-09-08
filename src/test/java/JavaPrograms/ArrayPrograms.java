@@ -376,7 +376,7 @@ for(let i of arr){
 console.log(map)
 
 
-// find un ique elemet from array
+// find unique elemet from array
       
 let arr:number[]=[0,1,1,4,6,6,4,2,4,6,7,8,9,3]
 let obj={}
@@ -392,7 +392,7 @@ for(let i in obj){
 }
 
 
-// find unique elemet from array
+// find non unique/duplicate elemet from array
       let arr:number[]=[0,1,1,4,6,6,4,2,4,6,7,8,9,3]
 let obj={}
 for(let i of arr){
