@@ -580,6 +580,7 @@ console.log(longestCommonPrefix(arr));
 
 
 // Check Whether a String is a Pangram ⭐
+//A pangram contains every alphabet at least once.
 function isPangram(str: string): boolean {
     let set = new Set();
     for (let ch of str.toLowerCase()) {
@@ -590,4 +591,23 @@ function isPangram(str: string): boolean {
     return set.size === 26;
 }
 console.log(isPangram("The quick brown fox jumps over the lazy dog"));  
+
+
+
+
+// Check Whether a String is an Isogram
+//An isogram contains no repeated characters.
+
+let str='The quick brown fox jumps over the lazy dog'
+let obj={}
+for(let i of str){
+obj[i]=(obj[i]||0)+1
+}
+
+for(let i in obj){
+if(obj[i]>1 && obj[i]!==" "){
+    console.log("not Isogram")
+    break
+}
+}
 }
