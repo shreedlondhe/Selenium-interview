@@ -253,9 +253,48 @@ console.log(sorted)
         }
         System.out.println(arr[0]);
     }
-// Find secons max number
+// Find  max number   second method
 let arr:number[]=[2,3,4,5,6,7,7]
 console.log([... new Set(arr)].sort((a,b)=>b-a)[1])
+
+//find max and seconnd max number
+let arr:number[]=[20,15,18,1,6,5,4,3,2,1,12,19,72,1,11,71]
+arr=[... new Set(arr)]
+let max1=arr[0] //20 20 20 72 72
+let max2=arr[1] //15 18 19 20 71
+
+for(let i=2;i<arr.length;i++){
+if(max1<arr[i]){
+    max2=max1
+    max1=arr[i]
+
+}
+else if(max2<arr[i]){
+max2=arr[i]
+}
+}
+console.log(max1,max2)
+      
+
+// find min and second min number
+let arr:number[]=[20,15,18,1,6,5,4,3,2,1,12,19,72,1,11,71]
+arr=[... new Set(arr)]
+let max1=arr[0] //20 20 20 72 72
+let max2=arr[1] //15 18 19 20 71
+
+for(let i=2;i<arr.length;i++){
+if(max1>arr[i]){
+    max2=max1
+    max1=arr[i]
+
+}
+else if(max2>arr[i]){
+max2=arr[i]
+}
+}
+console.log(max1,max2)
+      
+      
 
       
     @Test
