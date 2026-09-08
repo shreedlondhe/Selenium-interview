@@ -376,7 +376,22 @@ for(let i of arr){
 console.log(map)
 
 
-// find unique elemet from array
+// find duplicate elemet from array using two pointer
+      
+let arr: number[] = [1, 1, 2, 2, 3, 4, 4, 5,6,8,6,9];
+arr=arr.sort((a,b)=>a-b)
+console.log(arr)
+let a=0
+
+for(let i=1;i<arr.length;i++){
+if(arr[a]===arr[i]){
+console.log(arr[a])
+}
+a++
+}
+      
+
+// find unique elemet from array using object
       
 let arr:number[]=[0,1,1,4,6,6,4,2,4,6,7,8,9,3]
 let obj={}
