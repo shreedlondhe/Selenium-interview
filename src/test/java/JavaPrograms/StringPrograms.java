@@ -575,5 +575,19 @@ let arr = ["flower", "flow", "flight"];
 console.log(longestCommonPrefix(arr));
 
 
-    
+
+
+
+
+// Check Whether a String is a Pangram ⭐
+function isPangram(str: string): boolean {
+    let set = new Set();
+    for (let ch of str.toLowerCase()) {
+        if (ch >= "a" && ch <= "z") {
+            set.add(ch);
+        }
+    }
+    return set.size === 26;
+}
+console.log(isPangram("The quick brown fox jumps over the lazy dog"));  
 }
