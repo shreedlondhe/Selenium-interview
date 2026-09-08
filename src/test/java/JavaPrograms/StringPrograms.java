@@ -551,4 +551,29 @@ for(let i =str.split(" ").length-1;i>=0;i--){
 }
 console.log(rev)
 
+
+
+
+
+
+// Find Longest Common Prefix ⭐
+
+function longestCommonPrefix(arr: string[]): string {
+    let result = "";
+    for (let i = 0; i < arr[0].length; i++) {
+        let ch = arr[0][i];
+        for (let j = 1; j < arr.length; j++) {
+            if (arr[j][i] !== ch) {
+                return result;
+            }
+        }
+        result += ch;
+    }
+    return result;
+}
+let arr = ["flower", "flow", "flight"];
+console.log(longestCommonPrefix(arr));
+
+
+    
 }
