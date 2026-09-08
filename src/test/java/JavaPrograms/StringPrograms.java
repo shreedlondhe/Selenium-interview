@@ -488,4 +488,28 @@ count++
 }
 console.log(count)
 
+
+//  Count Alphabets, Digits and Special Characters
+
+let str = "Hello123@#";
+
+let alphabets = 0;
+let digits = 0;
+let special = 0;
+for (let ch of str) {
+
+    if ((ch >= "a" && ch <= "z") || (ch >= "A" && ch <= "Z")) {
+        alphabets++;
+    }
+    else if (ch >= "0" && ch <= "9") {
+        digits++;
+    }
+    else {
+        special++;
+    }
+}
+console.log("Alphabets:", alphabets);
+console.log("Digits:", digits);
+console.log("Special Characters:", special);
+
 }
