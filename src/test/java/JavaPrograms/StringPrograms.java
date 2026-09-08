@@ -239,6 +239,17 @@ b--
 let str_revresed=arr.join('')
 console.log(str_revresed)
 
+// reverse string using recursion
+function reverse(str: string): string {
+    // Base condition
+    if (str.length <= 1) {
+        return str;
+    }
+    // Take last character + reverse remaining string
+    return str[str.length - 1] + reverse(str.slice(0, -1));
+}
+console.log(reverse("hello"));
+
     
     @Test
     void reverseEachWord(){
