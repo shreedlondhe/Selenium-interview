@@ -477,4 +477,15 @@ for(let i of arr.split("")){
         }
         System.out.println(n);
     }
+
+// find the digit in string
+let str="madam123"
+let count=0;
+for(let i of str.split('')){
+if(i>=0 && i<9){
+count++
+}
+}
+console.log(count)
+
 }
