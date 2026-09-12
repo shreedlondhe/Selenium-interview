@@ -295,7 +295,50 @@ for(int s:valuesList){
 }
 }
 
+  // Remove duplicate values
 
-    
-    
+public static void main(String[] args) {
+Map<Integer, String> map = new HashMap<>();
+map.put(1, "Java");
+map.put(2, "Selenium");
+map.put(3, "Java");
+Map<Integer, String> map2 = new HashMap<>();
+for(int i:map.keySet()){
+  if(!map2.containsValue(map.get(i))){
+    map2.put(i,map.get(i));
+  }
+}
+System.out.println(map2);
+}
+
+
+  // Merge two HashMaps ⭐
+public static void main(String[] args) {
+Map<Integer, String> map1 = new HashMap<>();
+map1.put(1, "Java");
+map1.put(2, "Selenium");
+Map<Integer, String> map2 = new HashMap<>();
+map2.put(3, "API");
+map2.put(4, "SQL");
+map1.putAll(map2);
+System.out.println(map1);
+}
+
+
+ // Check whether two Strings are anagrams ⭐⭐⭐
+
+public static void main(String[] args) {
+String s1 = "listen";
+String s2 = "silent";
+Map<String, Integer> map1 = new HashMap<>();
+Map<String, Integer> map2 = new HashMap<>();
+for(String i:s1.split("")){
+  map1.put(i,map1.getOrDefault(i,0)+1);
+}
+for(String j:s2.split("")){
+  map2.put(j,map2.getOrDefault(j,0)+1);
+}
+System.out.println(map1.equals(map2)?"Yes Anagarm":"Not Anagarm");
+}
+
 }
