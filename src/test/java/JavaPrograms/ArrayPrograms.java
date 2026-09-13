@@ -520,6 +520,9 @@ else if(sum<arr[a]+arr[b]){
 else if(sum>arr[a]+arr[b]){
    a++
 }
+      if(a-b==1){
+    console.log("Not found")// handled is element is not found
+}
 }
 
 
