@@ -522,6 +522,31 @@ else if(sum>arr[a]+arr[b]){
 }
 }
 
+
+// Binary search
+let arr=[1,2,3,4,5,6,7,8,9]
+let left=0;
+let right=arr.length
+let target=3; // element for search
+
+while(left<=right){
+let mid=Math.floor(right+left/2) //used Math.floor() for roundoff eg. 2.5 -> 2
+
+if(arr[mid]==target){
+    console.log(`Found ${target}`)
+    break;
+}
+else if(arr[mid]<target){
+     left=mid+1
+}
+else{
+        right=mid-1
+}
+if(left-right==1){
+    console.log("Not found")// handled is element is not found
+}
+}
+
     }
 
 
