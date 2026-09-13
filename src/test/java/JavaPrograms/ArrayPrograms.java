@@ -10,6 +10,13 @@ import java.util.Set;
 public class ArrayPrograms {
 
 //let arr3:number[]=[0,1,1,3,4,6]    find missing number => 2,5
+      let arr:number[]=[0,1,1,3,4,6]
+      arr=[...new Set(arr)] // converted into set to get unique number
+      for(let i=0;i<=arr[arr.length-1];i++){
+        if(!arr.includes(i)){
+       console.log(i+" missing")
+      }
+        
 
 
       
