@@ -92,7 +92,20 @@ arr[i]=arr[j]
 arr[j]=temp
 }
 console.log(arr)
+ // or with two pointer
+let arr=[1,2,3,4,5]
+let a=0
+let b=arr.length-1
 
+while(a<b){
+let temp=arr[a];
+    arr[a]=arr[b]
+    arr[b]=temp
+    a++
+    b--
+}
+console.log(arr)
+      
       
 @Test
   void findFrequencyOfEachElement(){
