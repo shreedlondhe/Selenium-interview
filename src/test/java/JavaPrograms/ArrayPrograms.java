@@ -16,6 +16,16 @@ public class ArrayPrograms {
         if(!arr.includes(i)){
        console.log(i+" missing")
       }
+      // in java
+          public static void main(String[] args) { 
+            Integer arr[]={0,1,1,3,4,6};
+            List <Integer> l=Arrays.asList(arr);
+           for(int i=0;i<=l.get(l.size()-1);i++){
+             if(!l.contains(i)){
+             System.out.println(i);
+                          }
+                }
+          }
         
 
 
