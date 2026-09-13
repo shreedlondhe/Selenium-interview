@@ -31,7 +31,8 @@ public class Collections_and_It_methods {
 // |       5 | `reverse()`      | `Collections.reverse(list);` where `list = [10, 20, 30]`                          | `[30, 20, 10]`                  |
 // |       6 | `reverseOrder()` | `Collections.sort(list, Collections.reverseOrder());` where `list = [10, 30, 20]` | `[30, 20, 10]`                  |
 // |       7 | `frequency()`    | `Collections.frequency(Arrays.asList(10, 20, 10, 30), 10);`                       | `2`                             |
-// |       8 | `swap()`         | `Collections.swap(list, 0, 2);` where `list = [10, 20, 30]`                       | `[30, 20, 10]`                  |
+// |       8 | `swap()`         | `Collections.swap(list, 0, 2);` where `list = [10, 20, 30]`                       | `[30, 20, 10]`     
+// |       9 |  sort+reverse    |  Collections.sort(list,Collections,reverseOrder())
 // ----------------------------------------------------------------------------------------------------------------------------------------------------
 
 // //Arrrays methods
