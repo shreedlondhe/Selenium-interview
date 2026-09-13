@@ -44,6 +44,7 @@ public class ActionClass {
     action.contextClick(ele).perform();
     action.sendKeys(ele, Keys.ENTER);
     action.sendKeys(ele, "Text").perform();
+    action.doubleClick(ele).perform();
         
     //actions.keyDown(Keys.CONTROL).sendKeys("a").keyUp(Keys.CONTROL).perform();
     //actions.keyUp(Keys.CONTROL).perform();
