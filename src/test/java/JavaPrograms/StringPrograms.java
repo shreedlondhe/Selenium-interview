@@ -574,6 +574,25 @@ function longestCommonPrefix(arr: string[]): string {
 let arr = ["flower", "flow", "flight"];
 console.log(longestCommonPrefix(arr));
 
+// same above programin more simle way
+let arr = ["flower", "flow", "flight"];
+let result=""
+let flag=false;
+for(let i=0;i<arr[0].length;i++){
+    let ch=arr[0][i]
+    for(let j=1;j<arr.length;j++){
+         if(arr[j][i]==ch){
+           flag=true
+         }else{
+            flag=false
+         }  
+    }
+    if(flag==true){
+        result+=ch
+    }
+}
+console.log(result)
+
 
 
 
