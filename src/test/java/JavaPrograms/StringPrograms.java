@@ -503,6 +503,20 @@ for(let i of arr.split("")){
         System.out.println(n);
     }
 
+
+let str = "Counter: 60 @Test#123";
+// Numeric values
+let numbers = str.replaceAll(/\D/g, '');
+console.log(numbers);       // 60123
+// Alphabets
+let alphabets = str.replaceAll(/[^a-zA-Z]/g, '');
+console.log(alphabets);     // CounterTest
+// Special characters
+let specialChars = str.replaceAll(/[a-zA-Z0-9]/g, '');
+console.log(specialChars);  // : @#
+
+
+
 // find the digit in string
 let str="madam123"
 let count=0;
