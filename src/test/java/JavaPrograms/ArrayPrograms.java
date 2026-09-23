@@ -75,6 +75,21 @@ for (let i = 0; i < k; i++) {
 }
 console.log(arr);
 
+// rotate array by k position second way
+      
+let a=[1,2,3,4,5,6]
+      let k=2
+for(let j=0;j<k;j++){
+// below code is as simple as to shift posision by 1 index left
+    let zero=a[0]
+for(let i=0;i<a.length-1;i++){
+    a[i]=a[i+1]
+}
+a[a.length-1]=zero
+
+}
+console.log(a)
+
       
       
       @Test
