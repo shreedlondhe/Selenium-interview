@@ -64,6 +64,18 @@ console.log(flag?"sorted":"not sorted")
 
             console.log(ar)
       }
+
+// rotate array by k position in js
+let arr = [1, 2, 3, 4, 5, 6];
+let k = 2;
+
+for (let i = 0; i < k; i++) {
+    let first = arr.shift();
+    arr.push(first);
+}
+console.log(arr);
+
+      
       
       @Test
       void secondHighestNumber(){
