@@ -266,6 +266,19 @@ for(int x:arr){
          }
      }
     }
+
+
+// common element
+
+let a=[1,2,3,4,5,6,7]
+let b=[1,2,4,5,7,8,9,8]
+for(let i of [...new Set(a)]){
+if([...new Set(b)].includes(i)){
+  console.log("commom element "+i)
+}
+}
+
+
     @Test
     void bubbleSort(){
         int arr[]={1,3,4,5,7,9,1,2,9,10};
