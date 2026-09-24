@@ -312,7 +312,7 @@ for(let i in obj){
 }
 console.log(sorted)
       
-
+// if they asks third/fourh max number then convert array into set and sort array and find element in index basis
     @Test
     void findMaxNumber(){
         int arr[]={17,1,3,4,5,7,9,1,2,9,10,11,15,16};
