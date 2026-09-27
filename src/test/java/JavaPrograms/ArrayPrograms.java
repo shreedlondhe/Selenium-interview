@@ -640,7 +640,7 @@ j++
 console.log(arr)
 
 
-//Find the substring which has sum equal to given number merthod 1
+//Find the sub Array which has sum equal to given number merthod 1
       
 let arr=[1,2,3,4,5,6,7]// 12
 let start=0
