@@ -638,6 +638,33 @@ j++
 }
 }
 console.log(arr)
+
+
+//Find the substring which has sum equal to given number merthod 1
+      
+let arr=[1,2,3,4,5,6,7]// 12
+let start=0
+let sum=0
+let target=21
+
+function findSubStringWhichContainSumOfarray(arr,target){
+for(let i=0;i<arr.length;i++){
+sum+=arr[i]
+while(sum >target){
+    sum-=arr[start]
+    start++
+}
+if(target==sum){
+console.log("found")
+return arr.slice(start,i+1)
+}
+}
+return []
+}
+console.log(findSubStringWhichContainSumOfarray(arr,target))
+
+      
+      
       
     }
 
